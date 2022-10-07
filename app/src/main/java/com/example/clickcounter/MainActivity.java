@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             if (counter[0] > 0){
                 textViewNumber.setTextColor(Color.rgb(0,255,0));
             }
-            else {
+            else if (counter[0] == 0){
                 textViewNumber.setTextColor(Color.rgb(0,0,255));
             }
         });
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             if (counter[0] < 0){
                 textViewNumber.setTextColor(Color.rgb(255,0,0));
             }
-            else {
+            else if (counter[0] == 0){
                 textViewNumber.setTextColor(Color.rgb(0,0,255));
             }
         });
