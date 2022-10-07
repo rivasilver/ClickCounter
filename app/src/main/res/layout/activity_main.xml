@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="top"
+    android:gravity="center"
     android:id="@+id/relativeLayout"
     android:background="@color/black"
     tools:context=".MainActivity">
 
     <TextView
-        android:text="0"
+        android:text=""
         android:id="@+id/textViewNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,14 +27,14 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/textViewNumber"/>
+        android:layout_above="@+id/textViewNumber" />
 
     <Button
         android:text="-"
         android:id="@+id/buttonMinus"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewNumber"
+        android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content" />
+        android:layout_below="@+id/textViewNumber" />
 
 </RelativeLayout>
