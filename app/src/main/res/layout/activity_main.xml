@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text=""
+        android:text="0"
         android:id="@+id/textViewNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

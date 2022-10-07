@@ -2,6 +2,7 @@ package com.example.clickcounter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,16 +27,29 @@ public class MainActivity extends AppCompatActivity {
         buttonPlus.setOnClickListener(view -> {
             counter[0] += 1;
             textViewNumber.setText(String.valueOf(counter[0]));
+            if (counter[0] > 0){
+                textViewNumber.setTextColor(Color.rgb(0,255,0));
+            }
+            else {
+                textViewNumber.setTextColor(Color.rgb(0,0,255));
+            }
         });
 
         buttonMinus.setOnClickListener(view -> {
             counter[0] -= 1;
             textViewNumber.setText(String.valueOf(counter[0]));
+            if (counter[0] < 0){
+                textViewNumber.setTextColor(Color.rgb(255,0,0));
+            }
+            else {
+                textViewNumber.setTextColor(Color.rgb(0,0,255));
+            }
         });
 
         textViewNumber.setOnClickListener(view -> {
             counter[0] = 0;
             textViewNumber.setText(String.valueOf(counter[0]));
+            textViewNumber.setTextColor(Color.rgb(0,0,255));
         });
     }
 
