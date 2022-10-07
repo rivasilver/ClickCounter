@@ -11,7 +11,7 @@
 
     <TextView
         android:text="0"
-        android:id="@+id/textNumber"
+        android:id="@+id/textViewNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -27,13 +27,13 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/textNumber"/>
+        android:layout_above="@+id/textViewNumber"/>
 
     <Button
         android:text="-"
         android:id="@+id/buttonMinus"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textNumber"
+        android:layout_below="@+id/textViewNumber"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content" />
 
